@@ -1,7 +1,7 @@
 export default function Favorite({localData}) {
 
   return (
-    <section className="fixed right-0 ">
+    <section className="fixed right-0 md:opacity-100 opacity-25 hover:opacity-100">
       <h3 className="p-5 text-lg text-yellow-300 uppercase">My Favorites</h3>
       {localData?.map((value, key) => (
         <div key={`favoriteList-${value.id}`} className="w-40 h-12 flex flex-row items-center bg-slate-800 rounded-l-xl mb-1">
