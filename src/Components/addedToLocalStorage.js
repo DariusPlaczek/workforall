@@ -1,9 +1,9 @@
 export default function addedToLocalStorage(event) {
 
-  const cachedLocalStorage = JSON.parse(localStorage.getItem('work4All'))
+  const cachedLocalStorage = JSON.parse(localStorage.getItem('gitUserSearch'))
 
   if (cachedLocalStorage === null || cachedLocalStorage === undefined) {
-    localStorage.setItem('work4All', JSON.stringify([event]));
+    localStorage.setItem('gitUserSearch', JSON.stringify([event]));
     return
   }
 
@@ -13,6 +13,6 @@ export default function addedToLocalStorage(event) {
     }
   }
 
-  localStorage.setItem('work4All', JSON.stringify([...cachedLocalStorage, event]));
+  localStorage.setItem('gitUserSearch', JSON.stringify([...cachedLocalStorage, event]));
 
 }

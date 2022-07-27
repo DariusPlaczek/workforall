@@ -11,7 +11,7 @@ export default function SingleCard() {
   const { fetchData, favoriteData } = useSelector((state) => state)
 
   const [singleUser, setSingleUser] = useState([]);
-  console.log(singleUser)
+
   useEffect(() => {
 
     const cachedSingleData = fetchData.filter((value) => value.id.toString() === id )
