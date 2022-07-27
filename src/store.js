@@ -18,6 +18,7 @@ export const addData = (event) => ({
 
 export default function store(state = INITIAL_STATE, action) {
 
+
   switch (action.type) {
     case ADD_TO_STORAGE:
 
@@ -47,11 +48,11 @@ export default function store(state = INITIAL_STATE, action) {
 
 function localStore() {
 
-  if (localStorage.getItem("work4All") === null || localStorage.getItem("work4All") === undefined) {
+  if (localStorage.getItem("gitUserSearch") === null || localStorage.getItem("gitUserSearch") === undefined) {
     const empty = []
     return empty
   }
 
-  return JSON.parse(localStorage.getItem("work4All"))
+  return JSON.parse(localStorage.getItem("gitUserSearch"))
 
 }
